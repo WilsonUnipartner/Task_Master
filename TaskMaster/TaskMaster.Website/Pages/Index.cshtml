@@ -1,0 +1,76 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="tm-home">
+    <header class="tm-home__header">
+        <div class="tm-home__title-group">
+            <h1 class="tm-home__title">Weekly Overview</h1>
+            <p class="tm-home__subtitle">Your assignments for the current week.</p>
+        </div>
+    </header>
+
+    <section class="tm-home__stats">
+        <div class="tm-card">
+            <h2>Total Assignments</h2>
+            <p class="tm-card__value">@Model.Dashboard.TotalAssignments</p>
+        </div>
+        <div class="tm-card">
+            <h2>In Progress</h2>
+            <p class="tm-card__value">@Model.Dashboard.TasksInProgress</p>
+        </div>
+        <div class="tm-card">
+            <h2>Completed</h2>
+            <p class="tm-card__value">@Model.Dashboard.CompletedTasks</p>
+        </div>
+    </section>
+
+    <section class="tm-home__content">
+        <div class="tm-home__schedule">
+            <h2 class="tm-home__list-title">Weekly Schedule</h2>
+            <div class="tm-schedule-grid">
+                @if (!Model.Dashboard.WeekTasks.Any())
+                {
+                    <div class="tm-schedule-card">
+                        <p>No tasks scheduled for this week yet.</p>
+                    </div>
+                }
+                else
+                {
+                    @foreach (var task in Model.Dashboard.WeekTasks)
+                    {
+                        <article class="tm-schedule-card">
+                            <h3>@task.Title</h3>
+                            @if (!string.IsNullOrWhiteSpace(task.Description))
+                            {
+                                <p>@task.Description</p>
+                            }
+                            <p><strong>Status:</strong> @task.Status</p>
+                            @if (task.DueDateUtc.HasValue)
+                            {
+                                <p><strong>Due:</strong> @task.DueDateUtc.Value.ToLocalTime().ToString("dd MMM yyyy")</p>
+                            }
+                        </article>
+                    }
+                }
+            </div>
+        </div>
+
+        <aside class="tm-home__sidebar">
+            <div class="tm-card">
+                <h2>Status Distribution</h2>
+                <p>Placeholder for a chart summarizing Backlog, Analyzing, Implementing, Review, and Done.</p>
+            </div>
+            <div class="tm-card">
+                <h2>Productivity Pulse</h2>
+                <p>Placeholder for a progress bar and short summary of weekly completion.</p>
+            </div>
+            <div class="tm-card">
+                <h2>Calendar Integration</h2>
+                <p>Placeholder for actions like connecting Outlook or Google Calendar.</p>
+            </div>
+        </aside>
+    </section>
+</section>

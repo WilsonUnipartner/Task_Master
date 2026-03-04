@@ -1,0 +1,39 @@
+## .NET build outputs
+bin/
+obj/
+
+## Visual Studio / Rider
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Logs
+*.log
+logs/
+
+## NuGet
+packages/
+*.nupkg
+
+## Node / frontend
+node_modules/
+dist/
+build/
+.parcel-cache/
+.next/
+
+## IDE settings
+.vscode/
+.idea/
+
+## OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Coverage / test output
+coverage/
+TestResults/
+

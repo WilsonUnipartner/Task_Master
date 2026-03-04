@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "employeeId": 2,
+    "title": "New task assigned",
+    "message": "You have been assigned the task 'Set up development environment'.",
+    "createdAtUtc": "2026-03-01T09:05:00Z",
+    "isRead": false,
+    "type": "info",
+    "taskId": 1
+  },
+  {
+    "id": 2,
+    "employeeId": 3,
+    "title": "Task ready for analysis",
+    "message": "Please review the onboarding conventions task.",
+    "createdAtUtc": "2026-03-02T10:35:00Z",
+    "isRead": false,
+    "type": "info",
+    "taskId": 2
+  },
+  {
+    "id": 3,
+    "employeeId": 2,
+    "title": "Dashboard prototype planned",
+    "message": "You have a new backlog item: Implement dashboard prototype.",
+    "createdAtUtc": "2026-03-03T14:20:00Z",
+    "isRead": false,
+    "type": "info",
+    "taskId": 3
+  }
+]

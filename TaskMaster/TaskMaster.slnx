@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TaskMaster.Core/TaskMaster.Core.csproj" />
+  <Project Path="TaskMaster.Data/TaskMaster.Data.csproj" />
+  <Project Path="TaskMaster.Services/TaskMaster.Services.csproj" />
+  <Project Path="TaskMaster.Website/TaskMaster.Website.csproj" />
+</Solution>

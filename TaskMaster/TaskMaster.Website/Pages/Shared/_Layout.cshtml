@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TaskMaster.Website</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/TaskMaster.Website.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="tm-appbar">
+        <div class="tm-appbar__left">
+            <div class="tm-logo">
+                <span class="tm-logo__mark">TM</span>
+                <span class="tm-logo__text">Task Master</span>
+            </div>
+            <nav class="tm-appbar__nav">
+                <a class="tm-appbar__link" asp-area="" asp-page="/Index">Dashboard</a>
+                <a class="tm-appbar__link" href="#">My Tasks</a>
+                <a class="tm-appbar__link" href="#">Notifications</a>
+            </nav>
+        </div>
+        <div class="tm-appbar__right">
+            <div class="tm-search">
+                <input class="tm-search__input" type="search" placeholder="Search tasks..." />
+            </div>
+            <button class="tm-icon-button" type="button" aria-label="Notifications">
+                &#128276;
+            </button>
+            <div class="tm-profile">
+                <div class="tm-avatar">AR</div>
+                <div class="tm-profile__info">
+                    <span class="tm-profile__name">Alex Rivera</span>
+                    <span class="tm-profile__role">Product Designer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tm-shell">
+        <main role="main" class="tm-shell__main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="tm-footer border-top text-muted">
+        <div class="container">
+            &copy; 2026 - Task Master - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/bundle.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

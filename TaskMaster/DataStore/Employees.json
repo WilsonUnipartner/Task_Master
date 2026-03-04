@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "employeeNumber": "EMP-001",
+    "firstName": "Admin",
+    "lastName": "User",
+    "email": "admin@example.com",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "employeeNumber": "EMP-002",
+    "firstName": "Demo",
+    "lastName": "User1",
+    "email": "demo1@example.com",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "employeeNumber": "EMP-003",
+    "firstName": "Demo",
+    "lastName": "User2",
+    "email": "demo2@example.com",
+    "isActive": true
+  }
+]

@@ -1,0 +1,243 @@
+/* Task Master base frontend styles
+   Inspired by Unipartner's clean, white layout with blue accents. */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f7fb;
+  color: #1c2230;
+  margin: 0;
+}
+
+.tm-appbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.tm-appbar__left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tm-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tm-logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0050d0, #38bdf8);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.tm-logo__text {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.tm-appbar__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.tm-appbar__link {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.tm-appbar__link:hover {
+  color: #0050d0;
+}
+
+.tm-appbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tm-search {
+  position: relative;
+}
+
+.tm-search__input {
+  padding: 0.4rem 0.75rem;
+  min-width: 220px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.tm-icon-button {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.tm-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tm-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background-color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #0369a1;
+}
+
+.tm-profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tm-profile__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tm-profile__role {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.tm-shell {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.tm-shell__main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tm-home {
+  padding: 2rem 0;
+}
+
+.tm-home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.tm-home__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.tm-home__subtitle {
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.tm-home__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tm-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.tm-card__value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0050d0;
+}
+
+.tm-home__list-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.tm-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+}
+
+.tm-table th,
+.tm-table td {
+  padding: 0.75rem 1rem;
+}
+
+.tm-table thead {
+  background-color: #eef2ff;
+  color: #1c2230;
+}
+
+.tm-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.tm-table tbody tr:hover {
+  background-color: #eef2ff;
+}
+
+.tm-home__content {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 1.3fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tm-home__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tm-schedule-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.tm-schedule-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.tm-home__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tm-footer {
+  background-color: #ffffff;
+}
+

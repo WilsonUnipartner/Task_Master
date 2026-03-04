@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Set up development environment",
+    "description": "Install .NET, Node.js, and required tools for Task Master.",
+    "employeeId": 2,
+    "status": "Implementing",
+    "createdAtUtc": "2026-03-01T09:00:00Z",
+    "dueDateUtc": "2026-03-08T17:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Review onboarding conventions",
+    "description": "Read the Workspace Purpose and Solution Conventions document.",
+    "employeeId": 3,
+    "status": "Analyzing",
+    "createdAtUtc": "2026-03-02T10:30:00Z",
+    "dueDateUtc": "2026-03-09T12:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Implement dashboard prototype",
+    "description": "Create a basic dashboard showing tasks for the current week.",
+    "employeeId": 2,
+    "status": "Backlog",
+    "createdAtUtc": "2026-03-03T14:15:00Z",
+    "dueDateUtc": null
+  }
+]
