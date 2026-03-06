@@ -5,6 +5,8 @@ using AspNet.Security.OAuth.GitHub;
 using TaskMaster.Core.Abstractions;
 using TaskMaster.Data.Repositories;
 using TaskMaster.Services.TaskManagement;
+using TaskMaster.Services.EmployeeProfile;
+using TaskMaster.Services.Notifications;
 using TaskMaster.Website.Security;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<TaskDashboardService>();
+builder.Services.AddScoped<EmployeeService>();
+builder.Services.AddScoped<NotificationService>();
 builder.Services.AddSingleton<IAppUserStore, JsonAppUserStore>();
 
 builder.Services
@@ -44,6 +48,22 @@ builder.Services.AddSingleton<ITaskRepository>(sp =>
     var dataStorePath = Path.Combine(env.ContentRootPath, "..", "DataStore");
     var tasksFile = Path.Combine(dataStorePath, "Tasks.json");
     return new JsonTaskRepository(tasksFile);
+});
+
+builder.Services.AddSingleton<IEmployeeRepository>(sp =>
+{
+    var env = sp.GetRequiredService<IHostEnvironment>();
+    var dataStorePath = Path.Combine(env.ContentRootPath, "..", "DataStore");
+    var employeesFile = Path.Combine(dataStorePath, "Employees.json");
+    return new JsonEmployeeRepository(employeesFile);
+});
+
+builder.Services.AddSingleton<INotificationRepository>(sp =>
+{
+    var env = sp.GetRequiredService<IHostEnvironment>();
+    var dataStorePath = Path.Combine(env.ContentRootPath, "..", "DataStore");
+    var notificationsFile = Path.Combine(dataStorePath, "Notifications.json");
+    return new JsonNotificationRepository(notificationsFile);
 });
 
 var app = builder.Build();

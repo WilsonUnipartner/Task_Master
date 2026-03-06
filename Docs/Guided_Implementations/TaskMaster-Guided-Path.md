@@ -6,6 +6,21 @@ As new guided assignments are added, this path should be updated.
 
 ---
 
+## 0. Git & GitHub Basics
+
+**Goal:** Be comfortable working with the Task Master repository in Git and GitHub.
+
+1. Start in `Docs/Guided_Implementations/Git/Git-and-GitHub-Assignment.md`.
+2. Complete all steps:
+   - Clone the repository to your local machine.
+   - Configure your Git identity.
+   - Create a feature branch for your work.
+   - Make at least one small change and open a Pull Request.
+
+Once you can clone, branch, commit, push, and open a PR, you are ready to move on.
+
+---
+
 ## 1. Environment and Dependencies
 
 **Goal:** Ensure your machine can build and run Task Master.
@@ -85,7 +100,38 @@ Once this is clear, you are ready to work on richer frontend behavior such as ch
 
 ---
 
-## 6. API and Controller Extensions
+## 6. Authentication and Login
+
+**Goal:** Understand how users authenticate and how roles protect pages and APIs.
+
+1. Move to `Docs/Guided_Implementations/Auth/Login-and-Auth-Assignment.md`.
+2. Follow the assignment:
+   - Sign in using the demo accounts defined in `Users.json`.
+   - Explore how the JSON user store, cookie authentication, and roles work.
+   - Protect selected pages and APIs with `[Authorize]` and `[Authorize(Roles = "Admin")]`.
+   - Understand the purpose and configuration requirements of the Google/GitHub login buttons.
+
+You should be comfortable logging in as both Admin and Employee before building role-sensitive pages.
+
+---
+
+## 7. Domain Models & JSON Repositories
+
+**Goal:** Introduce additional core models and repositories beyond tasks.
+
+1. Move to `Docs/Guided_Implementations/Core_and_Data/Models-and-Repositories-Assignment.md`.
+2. Follow the assignment:
+   - Study the existing `TaskItem` and `JsonTaskRepository`.
+   - Design and add `Employee` and `Notification` models to `TaskMaster.Core`.
+   - Create `IEmployeeRepository` and `INotificationRepository` abstractions.
+   - Implement `JsonEmployeeRepository` and `JsonNotificationRepository` against the JSON data.
+   - Register these repositories in `Program.cs` so they can be injected into services and controllers.
+
+These building blocks are required before the Profile, Admin Dashboard, and Notification Center screens can be completed.
+
+---
+
+## 8. API and Controller Extensions
 
 **Goal:** Practice HTTP verbs and separation of concerns.
 
@@ -104,7 +150,7 @@ After completing the chart assignment, extend the API:
 
 ---
 
-## 7. Views and New Screens (Future Steps)
+## 9. Views and New Screens (Future Steps)
 
 **Goal:** Build out the remaining mockups as working screens.
 
@@ -119,7 +165,7 @@ Once the basics above are complete, move on to the view-focused assignments:
 
 ---
 
-## 8. Keeping This Path Up to Date
+## 10. Keeping This Path Up to Date
 
 Whenever a new guided assignment is created:
 
