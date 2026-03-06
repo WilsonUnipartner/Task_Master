@@ -241,3 +241,43 @@ body {
   background-color: #ffffff;
 }
 
+/* Login page */
+
+.tm-login-page {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 1rem;
+}
+
+.tm-login-card {
+  background: #ffffff;
+}
+
+.tm-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+}
+
+.tm-social-btn__avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tm-social-btn--google .tm-social-btn__avatar {
+  background: #ea4335;
+}
+
+.tm-social-btn--github .tm-social-btn__avatar {
+  background: #111827;
+}
+
+

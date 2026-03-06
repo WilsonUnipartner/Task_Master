@@ -1,0 +1,38 @@
+[
+  {
+    "username": "admin",
+    "password": "Admin@123",
+    "role": "Admin",
+    "employeeId": 1,
+    "displayName": "Admin User"
+  },
+  {
+    "username": "alice",
+    "password": "Employee@1",
+    "role": "Employee",
+    "employeeId": 2,
+    "displayName": "Alice Johnson"
+  },
+  {
+    "username": "bruno",
+    "password": "Employee@2",
+    "role": "Employee",
+    "employeeId": 3,
+    "displayName": "Bruno Silva"
+  },
+  {
+    "username": "carla",
+    "password": "Employee@3",
+    "role": "Employee",
+    "employeeId": 4,
+    "displayName": "Carla Santos"
+  },
+  {
+    "username": "diego",
+    "password": "Employee@4",
+    "role": "Employee",
+    "employeeId": 5,
+    "displayName": "Diego Costa"
+  }
+]
+

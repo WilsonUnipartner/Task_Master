@@ -30,11 +30,31 @@
                 &#128276;
             </button>
             <div class="tm-profile">
-                <div class="tm-avatar">AR</div>
-                <div class="tm-profile__info">
-                    <span class="tm-profile__name">Alex Rivera</span>
-                    <span class="tm-profile__role">Product Designer</span>
-                </div>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    var displayName = User.FindFirst("DisplayName")?.Value ?? User.Identity?.Name ?? "User";
+                    var role = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value ?? "Employee";
+                    var initials = displayName.Length > 0 ? displayName.Substring(0, 1).ToUpperInvariant() : "U";
+
+                    <div class="tm-avatar">
+                        @initials
+                    </div>
+                    <div class="tm-profile__info">
+                        <span class="tm-profile__name">@displayName</span>
+                        <span class="tm-profile__role">@role</span>
+                    </div>
+                    <div class="ms-3">
+                        <form asp-controller="Account" asp-action="Logout" method="post">
+                            <button type="submit" class="btn btn-sm btn-light text-dark fw-semibold">Sign out</button>
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <div class="ms-3">
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-sm btn-light text-dark fw-semibold">Sign in</a>
+                    </div>
+                }
             </div>
         </div>
     </header>

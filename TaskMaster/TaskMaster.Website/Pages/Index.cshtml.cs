@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using TaskMaster.Services.TaskManagement;
 
 namespace TaskMaster.Website.Pages;
 
+[Authorize]
 public class IndexModel : PageModel
 {
     private readonly TaskDashboardService _dashboardService;

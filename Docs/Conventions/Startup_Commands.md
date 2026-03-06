@@ -131,28 +131,22 @@ You should see `Build succeeded.` with no errors.
 
 ---
 
-## 8. Run the ASP.NET Core Website
+## 8. Run the ASP.NET Core Website (with HTTPS for social login)
 
-From the workspace root, run the Website project directly:
-
-```powershell
-dotnet run --project TaskMaster\TaskMaster.Website\TaskMaster.Website.csproj
-```
-
-or, if you prefer to change into the Website folder first:
+From the workspace root, run the Website project using the **https** launch profile so Google/GitHub redirects work:
 
 ```powershell
-cd TaskMaster\TaskMaster.Website
-dotnet run
+dotnet run --project TaskMaster\TaskMaster.Website\TaskMaster.Website.csproj --launch-profile https
 ```
 
-When the application starts, the console will show a URL similar to:
+When the application starts, the console will show URLs similar to:
 
 ```text
-Now listening on: http://localhost:5xxx
+Now listening on: https://localhost:7008
+Now listening on: http://localhost:5110
 ```
 
-Open that URL in your browser to access the Task Master web application.
+Use the **HTTPS** address (`https://localhost:7008`) in your browser and when configuring OAuth redirect URIs.
 
 ---
 
@@ -190,8 +184,8 @@ cd path\to\cloned\Task_Master
 dotnet restore TaskMaster\TaskMaster.slnx
 dotnet build TaskMaster\TaskMaster.slnx
 
-# 8) Run the Website
-dotnet run --project TaskMaster\TaskMaster.Website\TaskMaster.Website.csproj
+# 8) Run the Website (HTTPS profile for social login)
+dotnet run --project TaskMaster\TaskMaster.Website\TaskMaster.Website.csproj --launch-profile https
 ```
 
 Follow these commands top to bottom to get from a fresh clone to a running Task Master application.
