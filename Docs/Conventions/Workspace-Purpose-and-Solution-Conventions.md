@@ -136,29 +136,38 @@ Recommended baseline:
 
 ## Git and GitHub Onboarding Convention
 
-This workspace should be hosted in GitHub so interns can clone, branch, and collaborate.
+Task Master is distributed as a **GitHub template repository**. Each intern works in their **own copy** of the solution, created from that template, instead of sharing a single central repo.
 
 Minimum onboarding topics:
 
 - GitHub account creation
-- Repository access and cloning
+- Access to the Task Master template repository
+- Creating a new repository from the template (via **“Use this template”**)
+- Cloning your personal training repository
 - Branch creation for features
 - Commit message basics
-- Pull request workflow
-- Code review basics
+- Pull request workflow within your own repo
+- Code review basics (with a mentor or peer)
 
-Suggested beginner command sequence:
+Suggested beginner workflow:
 
-1. `git clone <repo-url>`
-2. `git checkout -b feature/<short-name>`
-3. `git status`
-4. `git add .`
-5. `git commit -m "Add <change>"`
-6. `git push -u origin feature/<short-name>`
+1. In GitHub, open the Task Master template repository and select **“Use this template”** to create `taskmaster-training-<your-name>` (or the naming convention defined by your team).
+2. On your new repository, copy the clone URL.
+3. On your machine:
+   - `git clone <your-repo-url>`
+   - `cd <your-repo-folder>`
+4. Create a feature branch:
+   - `git checkout -b feature/<short-name>`
+5. Make changes and commit:
+   - `git status`
+   - `git add .`
+   - `git commit -m "Add <change>"`
+6. Push and open a Pull Request in **your own repository**:
+   - `git push -u origin feature/<short-name>`
 
 Suggested follow-up training:
 
-- How to keep branch updated from main
+- How to keep your feature branch updated from `main` in your repo
 - How to resolve simple merge conflicts
 - How to inspect history (`git log`, `git diff`)
 

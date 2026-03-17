@@ -8,14 +8,15 @@ As new guided assignments are added, this path should be updated.
 
 ## 0. Git & GitHub Basics
 
-**Goal:** Be comfortable working with the Task Master repository in Git and GitHub.
+**Goal:** Be comfortable working with your **own Task Master training repository** (created from the GitHub template) in Git and GitHub.
 
 1. Start in `Docs/Guided_Implementations/Git/Git-and-GitHub-Assignment.md`.
 2. Complete all steps:
-   - Clone the repository to your local machine.
+   - Use the Task Master **template repository** to create your own GitHub repository (your mentor will share the link and naming convention).
+   - Clone your repository to your local machine.
    - Configure your Git identity.
    - Create a feature branch for your work.
-   - Make at least one small change and open a Pull Request.
+   - Make at least one small change and open a Pull Request in your repository.
 
 Once you can clone, branch, commit, push, and open a PR, you are ready to move on.
 

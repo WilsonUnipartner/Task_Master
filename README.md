@@ -2,6 +2,8 @@
 
 Task Master is a guided training solution designed to help interns ramp up on a modern .NET and JavaScript stack using a realistic, but contained, task management application. The objective of this workspace is to walk you step‑by‑step through setting up your environment, understanding the solution structure, and implementing incremental features (frontend, backend, and authentication) in a safe learning context.
 
+The GitHub repository for Task Master is published as a **template**. Each intern should first create their **own training repository** from this template (for example, `taskmaster-training-<your-name>`), then clone that personal repository locally and do all work there.
+
 ### Recommended starting point
 
 To understand the recommended learning flow and which assignment to tackle next, start with the guided path:

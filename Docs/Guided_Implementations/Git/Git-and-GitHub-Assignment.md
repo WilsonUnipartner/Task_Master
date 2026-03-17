@@ -4,11 +4,12 @@
 
 By the end of this assignment you should be able to:
 
-- **Clone** the Task Master repository to your local machine.
+- **Create your own repository** from the Task Master GitHub template.
+- **Clone** your personal Task Master training repository to your local machine.
 - **Create and switch branches** for your work.
 - **Stage and commit** changes with clear messages.
 - **Push** your work to GitHub and open a basic pull request.
-- **Pull and merge** updates from the main branch.
+- **Pull and merge** updates from the main branch in your own repository.
 
 The focus here is on building habits that you will use in every other assignment.
 
@@ -31,26 +32,32 @@ Worth noting: the email you configure in Git does not have to be the same as you
 
 ---
 
-### 3. Cloning the Task Master repository
+### 3. Creating your Task Master training repository and cloning it
 
-1. In a browser, navigate to the GitHub repository for Task Master.
-2. Copy the **clone URL** (HTTPS is recommended).
-3. In a terminal, choose a folder where you want to keep your projects and run:
+There is a **Task Master template repository** in GitHub that acts as the golden source for this training.
+
+1. In a browser, navigate to the **Task Master template repository** (your mentor will provide the link).
+2. Click **“Use this template”** and create a new repository in your own GitHub account or the organization, for example:
+
+   - `taskmaster-training-<your-name>`
+
+3. Once GitHub finishes creating your repository, open it and copy the **clone URL** (HTTPS is recommended).
+4. In a terminal, choose a folder where you want to keep your projects and run:
 
    ```bash
-   git clone <REPO_URL>
-   cd <REPO_FOLDER>
+   git clone <YOUR_REPO_URL>
+   cd <YOUR_REPO_FOLDER>
    ```
 
-4. Confirm that you can see the `TaskMaster` solution folder and `Docs` folder in your local clone.
+5. Confirm that you can see the `TaskMaster` solution folder and `Docs` folder in your local clone.
 
-From this point onward, all `dotnet` and `npm` commands should be run inside your local clone, not from a separate copy.
+From this point onward, all `dotnet` and `npm` commands should be run inside **your own Task Master repository clone**, not from a shared central repo.
 
 ---
 
 ### 4. Creating a feature branch
 
-For each assignment, you will work on a separate branch. This keeps `main` clean and makes code review easier.
+For each assignment, you will work on a separate branch in **your own repository**. This keeps `main` clean and makes code review easier.
 
 1. Make sure you are on the `main` (or `master`) branch:
 
@@ -126,7 +133,7 @@ Worth noting: aim for small, logical commits. Each commit should represent one m
    - Description: briefly explain what you changed and why.
 4. Assign reviewers according to your team’s practice (for exercises, you may simply review it yourself or with a mentor).
 
-After the PR is reviewed, it can be merged into `main`.
+After the PR is reviewed, it can be merged into `main` in **your repository**.
 
 ---
 
@@ -212,10 +219,11 @@ Keep this list handy while you practice:
 
 To consider this assignment complete, you should have:
 
-- A local clone of the Task Master repository.
+- A personal Task Master training repository created from the template on GitHub.
+- A local clone of **your** Task Master repository.
 - At least one feature branch created from `main`.
 - One or more commits with clear messages on that branch.
-- The branch pushed to GitHub and a Pull Request opened.
+- The branch pushed to GitHub and a Pull Request opened in your repository.
 - A short written reflection (for yourself) answering:
   - What is the difference between `git add` and `git commit`?
   - When should you create a new branch?
