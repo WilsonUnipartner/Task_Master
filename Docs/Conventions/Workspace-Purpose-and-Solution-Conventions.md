@@ -22,7 +22,7 @@ This workspace exists to help new interns practice and improve their Microsoft .
 
 The target technology direction is:
 
-- .NET 10 (when available in the project environment)
+- .NET 8 (when available in the project environment)
 - ASP.NET Core (API and Controllers)
 - Azure Functions
 - Razor Pages / MVC Website

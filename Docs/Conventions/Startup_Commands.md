@@ -26,7 +26,7 @@ ls
 
 ## 2. Verify .NET SDK
 
-Task Master targets **.NET 10** (`net10.0`).
+Task Master targets **.NET 8** (`net8.0`).
 
 Check your installed SDK and runtime:
 
@@ -35,7 +35,7 @@ dotnet --version
 dotnet --list-sdks
 ```
 
-If `.NET 10` is not installed, install the appropriate SDK before continuing.
+If `.NET 8` is not installed, install the appropriate SDK before continuing.
 
 ---
 

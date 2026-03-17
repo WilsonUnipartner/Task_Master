@@ -7,7 +7,7 @@ This document lists the key tools, SDKs, and package dependencies used in the **
 ## Global Requirements
 
 - **.NET SDK**
-  - Version: `.NET 10` (current SDK installed on this machine)
+  - Version: `.NET 8` (current SDK installed on this machine)
   - Used by: all `TaskMaster.*` .NET projects
 - **Node.js**
   - Example version: `v20.11.0` (confirmed on this machine)

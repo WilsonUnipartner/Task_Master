@@ -35,7 +35,7 @@ You should run all commands **from inside this repository**, unless instructed o
 
    - Look in any `.csproj` file (for example `TaskMaster.Core/TaskMaster.Core.csproj`) for:
      ```xml
-     <TargetFramework>net10.0</TargetFramework>
+     <TargetFramework>net8.0</TargetFramework>
      ```
 
 3. If `dotnet --version` does not report a 10.x SDK, install the appropriate .NET SDK from the official download page and re-run the command until it matches.
