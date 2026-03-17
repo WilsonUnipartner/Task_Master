@@ -173,7 +173,7 @@ Priority order:
 3. Admin assignment and filtering
 4. Weekly dashboard
 5. Notification center
-6. Azure Function extensions
+6. Deployment to Azure App Service
 7. UX and quality improvements
 
 ## Definition of Done for the Initial Iteration
